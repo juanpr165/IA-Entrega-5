@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Ejecutar agente",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "ia_entrega_5.main",
+      "justMyCode": true
+    }
+  ]
+}

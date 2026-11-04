@@ -1,0 +1,35 @@
+{
+  "trace_type": "EJEMPLO_FICTICIO",
+  "thread_id": "demo-001",
+  "prompt": "¿Qué vulnerabilidades tiene servidor-finanzas?",
+  "events": [
+    {
+      "node": "agent",
+      "messages": [
+        {
+          "type": "AIMessage",
+          "content": "",
+          "tool_calls": [{"name": "consultar_vulnerabilidades", "args": {"activo": "servidor-finanzas", "incluir_detalle": true}}]
+        }
+      ]
+    },
+    {
+      "node": "tools",
+      "messages": [
+        {
+          "type": "ToolMessage",
+          "content": "{\"ok\": true, \"complete\": true, \"count\": 1, \"disclaimer\": \"Hallazgos enteramente ficticios para fines académicos.\"}"
+        }
+      ]
+    },
+    {
+      "node": "agent",
+      "messages": [
+        {
+          "type": "AIMessage",
+          "content": "El activo ficticio tiene un hallazgo de severidad alta pendiente."
+        }
+      ]
+    }
+  ]
+}
